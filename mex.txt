@@ -1,0 +1,15 @@
+#mex
+s=list(map(int,input().split()))
+mex=0
+while mex in s:
+  mex+=1
+s=set(s)
+if mex==0:
+  print(-1)
+else:
+  for i in s:
+    if i<mex:
+      print(1)
+      break
+  else:
+    print(-1)
